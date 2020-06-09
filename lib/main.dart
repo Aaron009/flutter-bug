@@ -159,8 +159,8 @@ class _MyHomePageState extends State<MyHomePage> {
       stream.listen((value) {
         sc.sink.add(value);
       }, onDone: () {
-        //print("onDone($cachePath)")
-        print("onDone()");
+        print("onDone($cachePath)");
+//        print("onDone()");
         sc.close();
       });
     }
